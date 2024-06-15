@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="login.css">
 <body>
     <?php include "layout/header.html"?>
-        <h3>MASUK</h3>
+        <h3>MASUK dengan google</h3>
         <i><?= $login_message ?></i>
         <form action="login.php" method="POST">
             <input type="text" placeholder="username" name="username"/>
