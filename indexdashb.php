@@ -1,15 +1,5 @@
-<?php 
-    session_start();
-    if (isset($_POST['logout'])){
-        session_unset();
-        session_destroy();
-        header('location: index.php');
-    }
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Kirim Data menggunakan metode GET</title>
     <style>
@@ -22,7 +12,7 @@
         }
     
         .table1 tr th{
-            background: #74512D;
+            background: #35A9DB;
             color: #fff;
             font-weight: normal;
         }
@@ -41,7 +31,7 @@
         }
         
         a{
-            background-color: #543310;
+            background-color: blue;
             color: white;
             text-decoration: none;
             padding: 5px 5px;
@@ -52,28 +42,20 @@
             background-color: red;
         }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="dashboard.css">
-    <form action="dataget.php" method="get"></form>
 </head>
 <body>
-
     <?php
         // Auto refresh halaman web dalam 5 detik
         header("refresh: 5;");  
         
-        $uidrfid=$_SESSION['rfid'];
         $koneksi=mysqli_connect("localhost","root","","multicard") or die("Tidak bisa tersambung ke database");
-        $sql="select * from logperangkat WHERE uidrfid=$uidrfid order by id DESC";
+        $sql="select * from logperangkat order by id DESC";
 
         $query=mysqli_query($koneksi, $sql);
     ?>
-    <teks1_dashb>
-        <h3>SELAMAT DATANG <?= $_SESSION["username"]?> </h3>
-        <h4>Aktifitas Kartu</h4>
-        <table class="table1">
+
+    <h1>Data RFID</h1>
+    <table class="table1">
         <tr>
             <th>Nomor</th>
             <th>UID</th>
@@ -91,12 +73,9 @@
         <?php 
             } 
         ?>
-        </table>
-            <!-- <button1 hred>logout</button1> -->
-             <a href="logout.php">Logout</a>
-    </teks1_dashb>
-    
-    <?php include "layout/footer.html" ?>
+
+    </table>
 </body>
-</html>
+</html>    
+
 

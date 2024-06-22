@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<F, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
-<body>
-    <?php include "layout/header.html"?>
-        <h3>MASUK dengan google</h3>
-        <i><?= $login_message ?></i>
-        <form action="login.php" method="POST">
-            <input type="text" placeholder="username" name="username"/>
-            <input type="password" placeholder="password" name="password"/>
-            <button type = "submit" name="login">MASUK SEKARANG</button>
-        </form>
-    <?php include "layout/footer.html"?>
-</body>
-</html>
-
 <?php
     include "service/database.php";
     session_start();
@@ -40,6 +20,8 @@
         if ($result->num_rows > 0) {
             $data = $result->fetch_assoc();
             $_SESSION["username"] = $data["username"];
+            $_SESSION["uid"] = $data["user_ID"];
+            $_SESSION["rfid"] = $data["uidrfid"];
             $_SESSION["is_login"] = true;
             
             header("location: dashboard.php");
@@ -49,4 +31,24 @@
         $db->close();
     }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<F, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+<body>
+    <?php include "layout/header.html"?>
+        <h3>MASUK</h3>
+        <i><?= $login_message ?></i>
+        <form action="login.php" method="POST">
+            <input type="text" placeholder="username" name="username"/>
+            <input type="password" placeholder="password" name="password"/>
+            <button type = "submit" name="login">MASUK SEKARANG</button>
+        </form>
+    <?php include "layout/footer.html"?>
+</body>
+</html>
 
