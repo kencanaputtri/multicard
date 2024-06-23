@@ -71,6 +71,7 @@
         $query=mysqli_query($koneksi, $sql);
     ?>
     <teks1_dashb>
+        <h2>JAVA</h2>
         <h3>SELAMAT DATANG <?= $_SESSION["username"]?> </h3>
         <h4>Aktifitas Kartu</h4>
         <table class="table1">
@@ -78,6 +79,7 @@
             <th>Nomor</th>
             <th>UID</th>
             <th>Waktu</th>
+            <th>Tempat</th>
         </tr>
 
         <?php
@@ -87,6 +89,7 @@
                     <td><?=$hasil["id"];?></td>
                     <td><?=$hasil["uidrfid"];?></td>
                     <td><?=$hasil["waktu"];?></td>
+                    <td><?=$hasil["nama_tempat"];?></td>
                 </tr>
         <?php 
             } 

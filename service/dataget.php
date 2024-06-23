@@ -56,6 +56,7 @@
         
         // Mendapatkan data menggunakan $_GET
         $uidrfid = htmlspecialchars($_GET['uidrfid']);
+        $tempat = htmlspecialchars($_GET['tempat']);
         
         // Menampilan data dihalaman web getdata.php
 
@@ -66,7 +67,7 @@
         $count= mysqli_num_rows($query);
         
         if ($count> 0) {
-            $sql = "INSERT INTO logperangkat(uidrfid) values('$uidrfid')";
+            $sql = "INSERT INTO logperangkat(uidrfid,nama_tempat) values('$uidrfid','$tempat')";
             $query = mysqli_query($koneksi, $sql);
             echo"Berhasil menyimpan log";
         }else{
@@ -76,11 +77,7 @@
             <a href="../register.php?uidrfid=<?php echo $uidrfid ?>">Daftar</a>
             <?php
         }
-        
-        // Menjalankan query
-        
     }
-
 ?>
 
 <body>

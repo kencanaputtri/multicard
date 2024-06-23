@@ -59,7 +59,9 @@
             <input type="text" placeholder="username" name="username"/>
             <input type="password" placeholder="password" name="password"/>
             <input type="text" placeholder="cardid" name="cardid" value="<?php echo $uidrfid; ?>"/><br>
-            <button type = "submit" name="register">DAFTAR SEKARANG</button>
+            <buttr>
+                <button type="submit" name="register">DAFTAR SEKARANG</button>
+            </buttr>
         <br>
         </form>
     </inputan>
