@@ -59,11 +59,9 @@
     <form action="dataget.php" method="get"></form>
 </head>
 <body>
-
     <?php
         // Auto refresh halaman web dalam 5 detik
         header("refresh: 5;");  
-        
         $uidrfid=$_SESSION['rfid'];
         $koneksi=mysqli_connect("localhost","root","","multicard") or die("Tidak bisa tersambung ke database");
         $sql="select * from logperangkat WHERE uidrfid=$uidrfid order by id DESC";

@@ -4,11 +4,12 @@ body{
     letter-spacing: 0.05em;
 }
 header{
-    color: #543310;
+    color: #ffffff;
 }
 
 text{
-  color: white;
+  color: #543310;
+  ;
 }
 footer{
     color: #543310;

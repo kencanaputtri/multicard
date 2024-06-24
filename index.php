@@ -9,7 +9,7 @@
 <body>
     <?php include "layout/header.html"?>
     <text>
-        <h2>Web Memudahkan Anda Untuk</h2>
+        <h2>Web Ini Memudahkan Anda Untuk</h2>
         <h3>Pengcekan Aktivitas Kartu</h3>
     </text>
     <?php include "layout/footer.html"?>
