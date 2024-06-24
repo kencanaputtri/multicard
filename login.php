@@ -39,16 +39,21 @@
     <meta name="viewport" content="width=<F, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="login.css">
-<body>
     <?php include "layout/header.html"?>
-        <h3>MASUK</h3>
-        <i><?= $login_message ?></i>
-        <form action="login.php" method="POST">
-            <input type="text" placeholder="username" name="username"/>
-            <input type="password" placeholder="password" name="password"/>
+</head>
+<body>
+    <h3>MASUK</h3>
+    <i><?= $login_message ?></i>
+    <form action="login.php" method="POST">
+        <input type="text" placeholder="username" name="username"/>
+        <input type="password" placeholder="password" name="password"/>
+        <buttl>
             <button type = "submit" name="login">MASUK SEKARANG</button>
-        </form>
-    <?php include "layout/footer.html"?>
+        </buttl>
+    </form>
 </body>
+<footer>
+    <?php include "layout/footer.html"?>
+</footer>
 </html>
 

@@ -10,6 +10,7 @@
 
 #define SS_PIN  D2  //Pin D2
 #define RST_PIN D1  //Pin D1
+#define BUZZER  D4
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Membuat instance MFRC522
 
@@ -35,6 +36,7 @@ void setup() {
   SPI.begin();          // Init SPI bus
   mfrc522.PCD_Init();   // Init MFRC522 card
   connectToWiFi();
+  pinMode(BUZZER, OUTPUT);
 }
 
 //************************************************************************
@@ -49,7 +51,6 @@ void loop() {
     previousMillis = millis(); 
     OldCardID="";
   }
-  delay(50);
   //---------------------------------------------
   
   //Cek kartu RFID yang di scan
@@ -73,11 +74,11 @@ void loop() {
   }
   
   SendCardID(CardID);
-  delay(1000);
-  //buzzer
-  // analogWrite(3,20);
-  // delay(500);
-  // analogWrite(3,0);
+  delay(800);
+  // Bunyikan buzzer
+  tone(BUZZER, 1000); // Bunyikan buzzer dengan frekuensi 1000 Hz
+  delay(500);           // Tunggu 500 milidetik
+  noTone(BUZZER);     // Matikan buzzer
 }
 
 //************Kirim UID Kartu RFID ke website*************
@@ -88,7 +89,7 @@ void SendCardID( String uid ){
     HTTPClient http;                      // Deklarasi objek dari class HTTPClient
     WiFiClient client;
     // String Data GET
-    getData = "?uidrfid=" + String(uid) + "&tempat=parkir";  // Menambahkan data String UID Kartu ke metode GET
+    getData = "?uidrfid=" + String(uid) + "&tempat=kelas";  // Menambahkan data String UID Kartu ke metode GET
     // String metode GET
     Link = URL + getData;
     http.begin(client, Link);             // Inisialisasi HTTP request. Spesifik content-type header
@@ -109,7 +110,7 @@ void SendCardID( String uid ){
       }else if (payload.substring(0, 6) == "logout") {
         String user_name = payload.substring(6);  
         Serial.println(user_name);    
-      }else if (payload == "succesful") {
+      }if (payload == "succesful") {
         Serial.println("succesful");
       }else if (payload == "available") {
         Serial.println("available");

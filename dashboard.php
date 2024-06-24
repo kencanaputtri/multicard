@@ -95,8 +95,9 @@
             } 
         ?>
         </table>
-            <!-- <button1 hred>logout</button1> -->
-             <a href="logout.php">Logout</a>
+        <logout>
+            <a href="logout.php">Logout</a>
+        </logout>
     </teks1_dashb>
     
     <?php include "layout/footer.html" ?>
