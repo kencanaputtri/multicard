@@ -13,13 +13,15 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Membuat instance MFRC522
 
-//************************************************************************
-/* Seting koneksi wifi dengan user dan password wifi yang ada. */
-const char *ssid = "BARUS42";  
-const char *password = "K010695k";
+// int buzzPin = D8;
 
 //************************************************************************
-String URL = "http://192.168.100.165/multicard/service/dataget.php";  // Isi titik dengan IP Komputer Server
+/* Seting koneksi wifi dengan user dan password wifi yang ada. */
+const char *ssid = "ZTE_2.4G_YhbTwK";  
+const char *password = "hrdmhuud";
+
+//************************************************************************
+String URL = "http://192.168.1.5/multicard/service/dataget.php";  // Isi titik dengan IP Komputer Server
 String getData, Link;
 String OldCardID = "";
 unsigned long previousMillis = 0;
@@ -72,6 +74,10 @@ void loop() {
   
   SendCardID(CardID);
   delay(1000);
+  //buzzer
+  // analogWrite(3,20);
+  // delay(500);
+  // analogWrite(3,0);
 }
 
 //************Kirim UID Kartu RFID ke website*************
