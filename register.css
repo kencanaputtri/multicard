@@ -3,6 +3,11 @@ h3{
     color: azure;
 }
 
+body{
+    top: 50%;
+    left: 50%;
+}
+
 buttr{
     align-items: center;
 }

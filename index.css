@@ -5,15 +5,29 @@ body{
 }
 header{
     color: #ffffff;
+    position: absolute;
+}
+h1{
+  font-style: italic;
+  position: -ms-page;
+  align-items: center;
 }
 
 text{
   color: #543310;
-  ;
+  position: fixed; align-items: center; top: 41%; left: 5%;
 }
 footer{
     color: #543310;
 }
+buttonpakage{
+  text-align: center;
+  float: right;
+  top: 50%;
+  display: inline-block
+
+}
+
 button1{
   align-items: center;
   appearance: none;
@@ -196,3 +210,7 @@ button2{
   button3:disabled {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
   }
+
+foot{
+  position: -ms-page;
+}

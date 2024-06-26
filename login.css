@@ -3,6 +3,15 @@ h3{
     color: azure;
 }
 
+container {
+    text-align: center;  /* Center the content of the container */
+}
+
+
+input{
+    top: 50%;
+}
+
 button{
     align-items: center;
     width:max-content;

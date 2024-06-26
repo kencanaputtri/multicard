@@ -52,19 +52,19 @@
 </head>
 <body>
     <?php include "layout/header.html"?>
-    <inputan>
-    <h3>DAFTAR</h3>
-    <i><?=$register_message ?></i>
-        <form action="register.php" method="POST">
-            <input type="text" placeholder="username" name="username"/>
-            <input type="password" placeholder="password" name="password"/>
-            <input type="text" placeholder="cardid" name="cardid" value="<?php echo $uidrfid; ?>"/><br>
-            <buttr>
-                <button type="submit" name="register">DAFTAR SEKARANG</button>
-            </buttr>
-        <br>
-        </form>
-    </inputan>
+        <reg>
+            <h3>DAFTAR</h3>
+            <i><?=$register_message ?></i>
+            <form action="register.php" method="POST">
+                <input type="text" placeholder="username" name="username"/>
+                <input type="password" placeholder="password" name="password"/>
+                <input type="text" placeholder="cardid" name="cardid" value="<?php echo $uidrfid; ?>"/><br>
+                <buttr>
+                    <button type="submit" name="register">DAFTAR SEKARANG</button>
+                </buttr>
+                <br>
+            </form>
+        </reg>
     <?php include "layout/footer.html"?>
 </body>
 </html>

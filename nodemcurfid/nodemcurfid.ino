@@ -89,7 +89,7 @@ void SendCardID( String uid ){
     HTTPClient http;                      // Deklarasi objek dari class HTTPClient
     WiFiClient client;
     // String Data GET
-    getData = "?uidrfid=" + String(uid) + "&tempat=kelas";  // Menambahkan data String UID Kartu ke metode GET
+    getData = "?uidrfid=" + String(uid) + "&tempat=Perpustakaan";  // Menambahkan data String UID Kartu ke metode GET
     // String metode GET
     Link = URL + getData;
     http.begin(client, Link);             // Inisialisasi HTTP request. Spesifik content-type header

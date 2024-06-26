@@ -42,15 +42,19 @@
     <?php include "layout/header.html"?>
 </head>
 <body>
-    <h3>MASUK</h3>
-    <i><?= $login_message ?></i>
-    <form action="login.php" method="POST">
-        <input type="text" placeholder="username" name="username"/>
-        <input type="password" placeholder="password" name="password"/>
-        <buttl>
-            <button type = "submit" name="login">MASUK SEKARANG</button>
-        </buttl>
-    </form>
+    <div class="container">
+        <logpack>
+            <h3>MASUK</h3>
+            <i><?= $login_message ?></i>
+            <form action="login.php" method="POST">
+                <input type="text" placeholder="username" name="username"/>
+                <input type="password" placeholder="password" name="password"/>
+                <buttl>
+                    <button type = "submit" name="login">MASUK SEKARANG</button>
+                </buttl>
+            </form>
+        </logpack>
+    </div>
 </body>
 <footer>
     <?php include "layout/footer.html"?>

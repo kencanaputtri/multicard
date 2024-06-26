@@ -9,9 +9,13 @@
 <body>
     <?php include "layout/header.html"?>
     <text>
-        <h2>Web Ini Memudahkan Anda Untuk</h2>
-        <h3>Pengcekan Aktivitas Kartu</h3>
+        <h1>Selamat Satang</h1>
+        <h3>web ini memudahkan anda</h3>
+        <h4>dalam pengecekan aktivitas kartu</h4>
     </text>
-    <?php include "layout/footer.html"?>
+    <foot>
+        <?php include "layout/footer.html"?>
+    </foot>
+    
 </body>
 </html> 
