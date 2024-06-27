@@ -1,12 +1,16 @@
 h3{
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
 }
 h4{
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
+}
+h1{
+  color: antiquewhite;
 }
 
-logout{
-  margin-top: 20px;
+logout-butt{
+  margin-top: 10px;
+  margin: 20px;
 }
 
 button1{

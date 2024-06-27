@@ -70,7 +70,7 @@
     ?>
     <teks1_dashb>
         <h2>JAVA</h2>
-        <h3>SELAMAT DATANG <?= $_SESSION["username"]?> </h3>
+        <h3>HALLO <?= $_SESSION["username"]?> </h3>
         <h4>Aktifitas Kartu</h4>
         <table class="table1">
         <tr>
@@ -94,11 +94,13 @@
         ?>
         </table>
         <logout>
-            <a href="logout.php">Logout</a>
+            <div class="logout-butt">
+                <a href="logout.php">Logout</a>
+            </div>
         </logout>
     </teks1_dashb>
-    
     <?php include "layout/footer.html" ?>
 </body>
+<img src="image/bgdash.jpg" alt="Deskripsi gambar" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
 </html>
 
