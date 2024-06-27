@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost","root","","multicard") or die("Tidak bisa tersambung ke database");
+$koneksi = mysqli_connect("localhost:8111","root","","multicard") or die("Tidak bisa tersambung ke database");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["nama"])) {
         $nama = $_POST["nama"];

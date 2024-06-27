@@ -13,7 +13,7 @@
         $hash_password = hash("sha256", $password);
         $cardid = $_POST["cardid"];
 
-        $koneksi = mysqli_connect("localhost","root","","multicard") or die("Tidak bisa tersambung ke database");
+        $koneksi = mysqli_connect("localhost:8111","root","","multicard") or die("Tidak bisa tersambung ke database");
         $sqlcek = "SELECT * FROM users WHERE username='$username' OR uidrfid='$cardid'";
         $query=mysqli_query($koneksi, $sqlcek);
         $count= mysqli_num_rows($query);
