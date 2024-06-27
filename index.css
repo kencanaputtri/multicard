@@ -11,6 +11,7 @@ h1{
   font-style: italic;
   position: -ms-page;
   align-items: center;
+  margin-top: 0px;
 }
 
 text{
@@ -22,7 +23,7 @@ footer{
 }
 buttonpakage{
   text-align: center;
-  float: right;
+  float: inline-end;
   top: 50%;
   display: inline-block
 

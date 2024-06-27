@@ -6,7 +6,7 @@
     <title>Documents</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
+<body style="display: flex; flex-direction: column;">
     <?php include "layout/header.html"?>
     <text>
         <h1>Selamat Satang</h1>
@@ -16,6 +16,5 @@
     <foot>
         <?php include "layout/footer.html"?>
     </foot>
-    
 </body>
 </html> 

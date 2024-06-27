@@ -4,6 +4,11 @@ h3{
 h4{
     color: antiquewhite;
 }
+
+logout{
+  margin-top: 20px;
+}
+
 button1{
   align-items: center;
   appearance: none;

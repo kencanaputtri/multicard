@@ -13,6 +13,7 @@ buttr{
 }
 button{
     align-items: center;
+    margin-top: 10px;
     width:max-content;
     appearance: none;
     background-color: #fff;

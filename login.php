@@ -39,11 +39,10 @@
     <meta name="viewport" content="width=<F, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="login.css">
-    <?php include "layout/header.html"?>
 </head>
-<body>
-    <div class="container">
-        <logpack>
+<body style="display: flex; flex-direction: column;">
+    <?php include "layout/header.html"?>
+    <div class="login-form">
             <h3>MASUK</h3>
             <i><?= $login_message ?></i>
             <form action="login.php" method="POST">
@@ -53,11 +52,10 @@
                     <button type = "submit" name="login">MASUK SEKARANG</button>
                 </buttl>
             </form>
-        </logpack>
     </div>
-</body>
-<footer>
+    <footer>
     <?php include "layout/footer.html"?>
 </footer>
+</body>
 </html>
 

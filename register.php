@@ -50,10 +50,10 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="register.css">
 </head>
-<body>
+<body style="display: flex; flex-direction: column;">
     <?php include "layout/header.html"?>
-        <reg>
-            <h3>DAFTAR</h3>
+        <div class="reg-form">
+        <h3>DAFTAR</h3>
             <i><?=$register_message ?></i>
             <form action="register.php" method="POST">
                 <input type="text" placeholder="username" name="username"/>
@@ -64,7 +64,7 @@
                 </buttr>
                 <br>
             </form>
-        </reg>
+        </div>
     <?php include "layout/footer.html"?>
 </body>
 </html>

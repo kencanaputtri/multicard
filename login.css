@@ -3,10 +3,9 @@ h3{
     color: azure;
 }
 
-container {
-    text-align: center;  /* Center the content of the container */
-}
-
+login-form {
+    margin-top: 20%;
+  }  
 
 input{
     top: 50%;
@@ -14,6 +13,7 @@ input{
 
 button{
     align-items: center;
+    margin-top: 10px;
     width:max-content;
     appearance: none;
     background-color: #fff;
