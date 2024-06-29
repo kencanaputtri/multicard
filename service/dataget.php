@@ -41,7 +41,7 @@
         a:hover{
             background-color: red;
         }
-    </style>
+    </style> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -61,7 +61,7 @@
         // Menampilan data dihalaman web getdata.php
 
 
-        $koneksi = mysqli_connect("localhost","root","","multicard") or die("Tidak bisa tersambung ke database");
+        $koneksi = mysqli_connect("localhost:8111","root","","multicard") or die("Tidak bisa tersambung ke database");
         $cari="SELECT * FROM users WHERE uidrfid=$uidrfid";
         $query=mysqli_query($koneksi, $cari);
         $count= mysqli_num_rows($query);

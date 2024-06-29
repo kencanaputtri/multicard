@@ -63,7 +63,7 @@
         // Auto refresh halaman web dalam 5 detik
         header("refresh: 5;");  
         $uidrfid=$_SESSION['rfid'];
-        $koneksi=mysqli_connect("localhost","root","","multicard") or die("Tidak bisa tersambung ke database");
+        $koneksi=mysqli_connect("localhost:8111","root","","multicard") or die("Tidak bisa tersambung ke database");
         $sql="select * from logperangkat WHERE uidrfid=$uidrfid order by id DESC";
 
         $query=mysqli_query($koneksi, $sql);

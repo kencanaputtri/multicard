@@ -1,5 +1,5 @@
 <?php 
-$hostname = "localhost";
+$hostname = "localhost:8111";
 $username = "root";
 $password = "";
 $database_name = "multicard";
