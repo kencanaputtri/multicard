@@ -22,7 +22,7 @@ const char *ssid = "ZTE_2.4G_YhbTwK";
 const char *password = "hrdmhuud";
 
 //************************************************************************
-String URL = "http://192.168.1.5/multicard/service/dataget.php";  // Isi titik dengan IP Komputer Server
+String URL = "http://192.168.1.5/multicardsystem/multicard/service/dataget.php";  // 
 String getData, Link;
 String OldCardID = "";
 unsigned long previousMillis = 0;
