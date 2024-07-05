@@ -36,26 +36,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<F, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split-Screen Login</title>
+    <link rel="stylesheet" type="text/css" href="log_in.css">
 </head>
 <body style="display: flex; flex-direction: column;">
     <?php include "layout/header.html"?>
-    <div class="login-form">
-            <h3>MASUK</h3>
+    <div class="loginform">
+            <h3>Welcome Back!</h3>
             <i><?= $login_message ?></i>
             <form action="login.php" method="POST">
-                <input type="text" placeholder="username" name="username"/>
-                <input type="password" placeholder="password" name="password"/>
-                <buttl>
-                    <button type = "submit" name="login">MASUK SEKARANG</button>
-                </buttl>
-            </form>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="username" name="username" /></td>
+                    </tr>
+		            </tr>
+			            <td><input type="password" placeholder="password" name="password" /></td>
+		            </tr>
+		            <tr>
+			            <td colspan="2"><button type="submit" name="login">MASUK SEKARANG</button></td>
+		            </tr>
+	            </table>
+            </form>        
     </div>
     <footer>
     <?php include "layout/footer.html"?>
 </footer>
 </body>
 </html>
-

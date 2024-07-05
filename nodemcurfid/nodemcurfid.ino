@@ -18,11 +18,11 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);   // Membuat instance MFRC522
 
 //************************************************************************
 /* Seting koneksi wifi dengan user dan password wifi yang ada. */
-const char *ssid = "ZTE_2.4G_YhbTwK";  
-const char *password = "hrdmhuud";
+const char *ssid = "Puttri's phone";  
+const char *password = "puja2205";
 
 //************************************************************************
-String URL = "http://192.168.1.5/multicardsystem/multicard/service/dataget.php";  // 
+String URL = "http://192.168.190.227/multicardsystem/multicard/service/dataget.php";  // 
 String getData, Link;
 String OldCardID = "";
 unsigned long previousMillis = 0;

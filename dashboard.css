@@ -1,16 +1,19 @@
 h3{
-    color: rgb(255, 255, 255);
+    color: #AF8F6F;
 }
 h4{
-    color: rgb(255, 255, 255);
+    color: #AF8F6F;
 }
 h1{
   color: antiquewhite;
 }
 
-logout-butt{
-  margin-top: 10px;
-  margin: 20px;
+.logoutbutt{
+  position: fixed; align-items: center; top:2%; left: 90%;
+}
+
+table1{
+  position: fixed; align-items: center; top: 35%; left: 46%;
 }
 
 button1{

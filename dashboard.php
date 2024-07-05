@@ -64,12 +64,11 @@
         header("refresh: 5;");  
         $uidrfid=$_SESSION['rfid'];
         $koneksi=mysqli_connect("localhost:8111","root","","multicard") or die("Tidak bisa tersambung ke database");
-        $sql="select * from logperangkat WHERE uidrfid=$uidrfid order by id DESC";
+        $sql="select * from logcard WHERE uidrfid=$uidrfid order by id DESC";
 
         $query=mysqli_query($koneksi, $sql);
     ?>
     <teks1_dashb>
-        <h2>JAVA</h2>
         <h3>HALLO <?= $_SESSION["username"]?> </h3>
         <h4>Aktifitas Kartu</h4>
         <table class="table1">
@@ -94,13 +93,12 @@
         ?>
         </table>
         <logout>
-            <div class="logout-butt">
+            <div class="logoutbutt">
                 <a href="logout.php">Logout</a>
             </div>
         </logout>
     </teks1_dashb>
     <?php include "layout/footer.html" ?>
 </body>
-<img src="image/bgdash.jpg" alt="Deskripsi gambar" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
 </html>
 

@@ -48,21 +48,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<F, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" type="text/css" href="regis_ter.css">
 </head>
 <body style="display: flex; flex-direction: column;">
     <?php include "layout/header.html"?>
-        <div class="reg-form">
-        <h3>DAFTAR</h3>
+        <div class="regform">
+        <h3>Welcome!</h3>
             <i><?=$register_message ?></i>
             <form action="register.php" method="POST">
-                <input type="text" placeholder="username" name="username"/>
-                <input type="password" placeholder="password" name="password"/>
-                <input type="text" placeholder="cardid" name="cardid" value="<?php echo $uidrfid; ?>"/><br>
-                <buttr>
-                    <button type="submit" name="register">DAFTAR SEKARANG</button>
-                </buttr>
-                <br>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="username" name="username"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="password" name="password"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="card id" name="cardid" value="<?php echo $uidrfid; ?>"/><br></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" name="register">DAFTAR SEKARANG</button></td>
+                    </tr>
+                </table>
             </form>
         </div>
     <?php include "layout/footer.html"?>

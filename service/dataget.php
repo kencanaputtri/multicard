@@ -67,7 +67,7 @@
         $count= mysqli_num_rows($query);
         
         if ($count> 0) {
-            $sql = "INSERT INTO logperangkat(uidrfid,nama_tempat) values('$uidrfid','$tempat')";
+            $sql = "INSERT INTO logcard (uidrfid,nama_tempat)VALUES('$uidrfid','$tempat')";
             $query = mysqli_query($koneksi, $sql);
             echo"Berhasil menyimpan log";
         }else{

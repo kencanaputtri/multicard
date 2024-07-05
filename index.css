@@ -1,29 +1,41 @@
 body{
-    background-color: #AF8F6F;
+    background-color: #fff;
     font-family: monospace, serif;
     letter-spacing: 0.05em;
+}
+head{
+  background-color: #fff;
 }
 header{
     color: #ffffff;
     position: absolute;
 }
 h1{
+  color: #AF8F6F;
   font-style: italic;
-  position: -ms-page;
   align-items: center;
   margin-top: 0px;
+  margin-left: 20px;
+}
+h2{
+  color: #74512D;
+  font-size: 35px;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+}
+h5{
+  margin-top: 3px;
 }
 
 text{
   color: #543310;
-  position: fixed; align-items: center; top: 41%; left: 5%;
+  position: fixed; align-items: center; top: 41%; left: 8%;
 }
 footer{
     color: #543310;
 }
-buttonpakage{
+buttonpack{
   text-align: center;
-  top: 50%;
+  position: fixed; align-items: center; top:2%; left: 72%;
   display: inline-block
 
 }
