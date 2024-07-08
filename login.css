@@ -1,36 +1,72 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
 
-h3{
-    color: #AF8F6F;
-    align-items: center;
-    position: fixed; align-items: center; top: 35%; left: 48%;
+.login{
+    height: 100vh;
+}
+
+.header h1{
     font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 18px;
+    position: fixed; align-items: center ; top: 28%; left: 17%;
 }
 
-body{
-    top: 50%;
-    left: 50%;
+.login-form input{
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 20px;
 }
-input{
-    width: 200%;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #d6d6d6a3;
-    border-radius: 7px;
-    background-color: rgba(220, 220, 220, 0.251);
-}
-.regform{
-    margin: 0 auto; /* Center the element horizontally */
-    width: fit-content; /* Adjust width as needed */
-    padding: 23px; /* Add some padding for better look */
-    border-radius: 10%; /* Optional: Rounded corners */
-    position: fixed; align-items: center; top: 40%; left: 33%;
-  }
 
-  button{
+.form-check a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #74512D;
+    position: fixed; align-items: center ; top: 56%; left: 31%;
+}
+
+.form-check label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 20px;
+    margin-top: 18px;
+}
+.row{
+    position: fixed; align-items: center ; top: 35%; left: 8%;
+    width: 70%;
+}
+.signup{
+    position: fixed; align-items: center ; top: 69%; left: 13%;
+}
+.signup span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+}
+.signup a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #74512D;
+}
+
+.button button{
     align-items: center;
-    margin-top: 10px;
-    margin: 5px;
-    width: 211%;
+    margin-top: 25px;
+    width: 100%;
     appearance: none;
     background-color: #74512D;
     border-radius: 7px;
@@ -39,7 +75,7 @@ input{
     box-sizing: border-box;
     color: #ffffff;
     cursor: pointer;
-    animation-delay: 5ms;
+    animation-delay: 10ms;
     display: flex;
     fill: currentcolor;
     font-family: "Google Sans",Roboto,Arial,sans-serif;
@@ -49,7 +85,7 @@ input{
     justify-content: center;
     letter-spacing: .25px;
     line-height: normal;
-    max-width: 300%;
+    max-width: 100%;
     overflow: visible;
     padding: 2px 24px;
     position: relative;
@@ -59,7 +95,7 @@ input{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 211%;
+    width: 100%;
     will-change: transform, opacity;
     z-index: 0;
     }
@@ -89,4 +125,9 @@ input{
     }
     button:disabled {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    }
+
+    .login-right{
+        
+        background-color: #AF8F6F;
     }
